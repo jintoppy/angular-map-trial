@@ -1,0 +1,13 @@
+<section>
+    <aside>
+
+        <ul>
+            <li *ngFor="let propertyItem of properties;">
+                {{propertyItem.city}}
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <app-map [properties]="properties"></app-map>
+    </main>
+</section>
